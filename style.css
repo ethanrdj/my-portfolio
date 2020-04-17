@@ -2,18 +2,35 @@
 body{
     background-color: #F5F5F5;
     color: #333;
-    font-family:ubuntu mono;
+    font-family:ubuntu mono, monospace
 }
-.main-picture{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 22%;
+#picture-row{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    order:1;
+}
+.main-picture {
+  width: 25%;
   border-radius:50%;
   position: relative;
   top:7px;
 }
-
+.left-picture{
+  width: 25%;
+  border-radius:50%;
+  position: relative;
+  top:7px;
+  order:-1;
+  margin-left:35px;
+}
+.right-picture{
+  width: 25%;
+  border-radius:50%;
+  position: relative;
+  top:7px;
+  margin-right:35px;
+}
 .topnav {
     background-color: #333;
     overflow: auto;
@@ -38,7 +55,7 @@ body{
   
   .topnav a:hover {
     background-color:whitesmoke
-    color: black;
+    color: #333;
     width:18%;
     animation-name:header-bar;
     animation-duration: 750ms;
