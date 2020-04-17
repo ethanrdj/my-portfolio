@@ -37,14 +37,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-   
+   flex-basis: 25%;
   }
   
   .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 24px 26px;
+    padding: 24px 135px 26px 135px;
     font-size: 1.6em;
     font-weight:bold;
     text-decoration: none;
@@ -101,8 +101,6 @@ body{
     color:whitesmoke;
     border-radius: 10%;
     font-size:1.1em;
-   
-    
     } 
     #likes-dislikes{
       margin-left: 3em;
