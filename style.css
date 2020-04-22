@@ -17,7 +17,8 @@ body{
   top:2.2vh;
 }
 .left-picture{
-  width: 25%;
+  width: 19%;
+  height:19%;
   border-radius:50%;
   position: relative;
   top:2.2vh;
@@ -25,11 +26,40 @@ body{
   margin-left:3vw;
 }
 .right-picture{
-  width: 25%;
+  width: 19%;
+  height:19%;
   border-radius:50%;
   position: relative;
   top:2.2vh;
   margin-right:3vw;
+}
+.left-picture:hover{
+  animation-name: left-animation;
+  animation-duration: 0.75s;
+  animation-fill-mode:forwards;
+}
+.right-picture:hover{
+    animation-name: right-animation;
+    animation-duration: 0.75s;
+    animation-fill-mode:forwards;
+  }
+@keyframes left-animation {
+    0%{
+        width: 19%;
+        height:19%;
+    } 100%{
+        width: 25%;
+        height:25%;
+    }
+}
+@keyframes right-animation{
+    0%{
+        width: 19%;
+        height:19%;
+    } 100%{
+        width: 25%;
+        height:25%;
+    }
 }
 .topnav {
     background-color: #333;

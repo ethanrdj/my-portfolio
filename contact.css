@@ -1,0 +1,243 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #F5F5F5;
+    color: #333;
+    font-family:ubuntu mono, monospace
+}
+
+h1 {
+text-align:center;
+font-family:"Fjalla One";
+}
+
+hr{
+    width:75%;
+    border: 0.5vh solid #333
+}
+p {
+    text-align:left;
+    font-family:"Fjalla One";
+    font-size:2.5em;
+    margin-left: 17%;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c9c9c9;
+    color: #333;
+    margin-left: 100px;
+    width: 40%;
+    height: 50%;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 10px solid #333;
+}
+
+label {
+  text-align: left;
+  display: inline-block;
+  width: 60%;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+form input {
+  display: inline-block;
+  text-align: left;
+  height: 25px;
+  width: 90%;
+}
+
+.msg{
+  left:75px;
+}
+
+textarea {
+  height: 55px;
+  box-sizing: border-box;
+  width: 90%;
+} 
+
+.button {
+  padding-left: 60px;
+}
+
+form button {
+  margin-left: 6em;
+  margin-top: 1em;
+}
+
+.main-body {
+  display: flex;
+}
+
+#email-icon {
+  width: 24%;
+  height: 24%;
+  margin-top: 4em;
+  margin-left: 9em;
+  transform: rotate(15deg);
+  max-width: 100%;
+}
+
+#email-icon:hover {
+animation-name: email;
+animation-duration: 1s;
+}
+
+@keyframes email {
+  0% {
+    transform: rotate(15deg);
+  } 100% {
+    transform: rotate(30deg); 
+  }
+}
+
+  .topnav {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+  }
+  .topnav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 135px 26px 135px;
+    font-size: 1.6em;
+    font-weight:bold;
+    text-decoration: none;
+    flex:1;
+  }
+  
+  .topnav a:hover {
+    background-color:whitesmoke;
+    color:#333;
+    width:18%;
+    animation-name:header-bar;
+    animation-duration: 750ms;
+    animation-fill-mode:forwards;
+    }
+    @keyframes header-bar{
+      0%{
+        background-color: #333;
+      } 100%{
+        background-color: whitesmoke;
+        color:#333;
+      }
+    }
+
+    footer {
+      display: flex;
+      margin-top:5em;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:75px;
+        margin-left: 30px;
+        padding: 5px 5px 15px 5px;
+        border-radius: 20px;
+        font-size: 20px;
+        align-items: center;
+        flex:1;
+    }
+
+    .social a {
+        background-color: #333;
+        color: whitesmoke;
+        padding:16px;
+        border-radius: 20px;
+    }
+
+    .social a:hover {
+      background-color: #F5F5F5;
+      color: #333;
+      animation-name:footer-bar;
+      animation-duration: 750ms;
+      animation-fill-mode:forwards;
+      }
+      @keyframes footer-bar{
+        0%{
+          background-color: #333;
+        } 100%{
+          background-color: whitesmoke;
+          color:#333;
+        } 
+      }
+
+
+      /* MEDIA QUERIES*/
+
+      @media all and (max-width:1020px) {
+
+        .topnav {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media all and (max-width:768px) {
+
+         form {
+           width:75%;
+           margin-left: 5%;
+           margin-right: 10%;
+           padding-right: 4em;
+         }
+
+        .main-body {
+          flex-direction: column;
+        }
+
+        #email-icon {
+          width: 45%;
+          height:45%;
+        }
+
+      }
+
+      @media all and (max-width:480px) {
+
+        form {
+          width:90%;
+          margin-left: 5%;
+          margin-right: 10%;
+          padding-right: 4em;
+        }
+
+        #email-icon {
+          width: 60%;
+          height: 60%;
+          margin-left: 18%;
+        }
+
+        form input {
+          height: 25px;
+          width:90%;
+        }
+        textarea {
+          width:90%;
+        }
+
+
+      }
+
