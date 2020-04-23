@@ -46,6 +46,7 @@ img {
 }
 
 p {
+    display:flex;
     font-size: 1.5em;
     text-align: center;
     line-height: 45px;
@@ -107,4 +108,21 @@ footer {
       .topnav {
           flex-wrap: wrap;
       }
+      p {
+          width: 100vw;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+
+  @media all and (max-width:550px) {
+      p {
+          font-size:1.3em;
+          padding:0;
+          margin-left: 0px;
+          margin-right: 0px;
+          line-height: 30px;
+      }
+
+
   }
