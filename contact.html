@@ -27,7 +27,7 @@
 
     <section class="main-body">
 
-    <form action="mailto:ethanrdavis96@gmail.com" method="post" id="myForm"> 
+    <form action="mailto:ethanrdavis96@gmail.com" method="post" id="myForm" enctype="text/plain">
         <ul>
          <li>
            <label for="name">Name:</label>
@@ -46,7 +46,7 @@
             <input type="file" id="attachedfile" name="attachedfile" maxlength=50 allow="text/*" >
          </li>
          <div class ="button">
-            <button type="submit" id="submit" >Submit</button>
+            <button type="submit" id="submit">Submit</button>
             <button type="reset" id="reset" >Reset</button>            
          </div>
         </ul>
@@ -63,7 +63,7 @@
         </ul>
     </footer> 
     
-    <script>   
+    <script>
       
       var submit = document.getElementById('submit');
       submit.addEventListener("click", sendValue);
@@ -72,9 +72,10 @@
         var formName = document.getElementById('name').value;
         var formEmail = document.getElementById('email').value;
         var formMsg = document.getElementById("message").value
-        alert(formName)
-        alert(formEmail) 
-        alert(formMsg)
+        alert(`
+        Name: ${formName}        
+        Email: ${formEmail} 
+        Message: ${formMsg}`);
         }
     
     </script>
