@@ -72,10 +72,15 @@
         var formName = document.getElementById('name').value;
         var formEmail = document.getElementById('email').value;
         var formMsg = document.getElementById("message").value
-        alert(`
-        Name: ${formName}        
-        Email: ${formEmail} 
-        Message: ${formMsg}`);
+ 
+        if (formName !== '' && formEmail !== '' && formMsg !== '') {
+            window.alert(` 
+            Name: ${formName} 
+            Email: ${formEmail} 
+            Message: ${formMsg}`)
+        } else {
+                window.alert("Please fill in all fields");
+                }
         }
     
     </script>
